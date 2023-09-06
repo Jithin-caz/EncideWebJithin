@@ -1,0 +1,13 @@
+@media all and (max-width:600px) {
+    .rectangle-encide
+    {
+        font-size:17dvw !important;
+    }
+    .rectangle-caption
+    {
+        font-size:5dvw !important ;
+    }
+    .rectangle{
+        height:70dvw !important;
+    }
+}
