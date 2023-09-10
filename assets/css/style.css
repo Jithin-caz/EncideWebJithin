@@ -218,19 +218,26 @@ section {
   position: relative;
 }
 
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 30px;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  padding-left: 60px;
+  /* padding: 10px 0 10px 30px; */
+  /* padding-left: 60px; */
+  padding: 6px 4px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #93B1A6;
   white-space: nowrap;
   transition: 0.3s;
+  position: relative;
 }
 
 .navbar a i,
@@ -238,6 +245,25 @@ section {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+}
+
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
 }
 
 .navbar a:hover,
@@ -410,6 +436,16 @@ section {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+}
+
+.navbar-mobile>ul>li {
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
 }
 
 .navbar-mobile a,
@@ -679,6 +715,7 @@ section {
   transform: translateX(5px);
 }
 
+
 /* .hero .hero-img {
   text-align: right;
 } */
@@ -731,7 +768,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   /* background: #183D3D; */
   /* background: linear-gradient(to right, #183D3D(255,0,0,0), #183D3D(255,0,0,1)); */
   background-size: cover;
