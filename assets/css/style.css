@@ -497,6 +497,7 @@ section {
 }
 
 .hero {
+  
   width: 100%;
   height: 100vh;
   /* background: url(../img_encide/491362538070.jpg) top center no-repeat; */
@@ -552,11 +553,12 @@ section {
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px
+    
   }
   
    .hero a:hover {
     background: #00fefe;
-    color: #fff;
+    color: black;
     border-radius: 5px;
     box-shadow: 0 0 5px #00fefe,
                 0 0 25px #00fefe,
@@ -1001,41 +1003,41 @@ section {
 }
 
 .services .service-box.blue {
-  border-bottom: 3px solid #2db6fa;
+  border-bottom: 3px solid #f68c09;
 }
 
 .services .service-box.blue .icon {
-  color: #2db6fa;
+  color: #f68c09;
   background: #dbf3fe;
 }
 
 .services .service-box.blue .read-more {
-  color: #2db6fa;
+  color: #f68c09;
 }
 
 .services .service-box.blue:hover {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+background:  #f68c09;
 }
 
 .services .service-box.orange {
-  border-bottom: 3px solid #f68c09;
+  border-bottom: 3px solid #2db6fa;
 }
 
 .services .service-box.orange img {
-  /* color: #f68c09;
+  /* color: #2db6fa;
   background: #fde3c4; */
   height: 60px;
   width: 202px;
 }
 
 .services .service-box.orange .read-more {
-  color: #f68c09;
+  color: #2db6fa;
 }
 
 .services .service-box.orange:hover {
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+  background:  #2db6fa;
 }
 
 .services .service-box.green {
@@ -1055,7 +1057,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,13
 
 .services .service-box.green:hover {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+background:  #08da4e;
 }
 
 .services .service-box.red {
@@ -1073,7 +1075,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,13
 
 .services .service-box.red:hover {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+background: #e9222c;
 }
 
 .services .service-box.purple {
@@ -1091,7 +1093,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,13
 
 .services .service-box.purple:hover {
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+  background:  #b50edf;
 }
 
 .services .service-box.pink {
@@ -1109,7 +1111,7 @@ background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,13
 
 .services .service-box.pink:hover {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8968837535014006) 5%, rgba(92,131,116,0.8968837535014006) 50%, rgba(16,33,31,0.8996848739495799) 95%);
+background:#f51f9c;
 }
 
 .services .service-box:hover h3,

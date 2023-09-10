@@ -1,3 +1,53 @@
+::-webkit-scrollbar
+{
+    display:none;
+}
+
+#events-image
+{
+    transition-timing-function:linear;
+    transition-duration: 3s;
+    animation: imageChange 12s infinite;
+    border-radius: 0px;
+}
+@keyframes imageChange
+{
+    12.5%
+    {
+        border-top-left-radius: 35px;
+    }
+    25%
+    {
+        border-top-right-radius:35px;
+        content: url('assets/img_encide/WhatsApp\ Image\ 2023-09-06\ at\ 10.16.46\ PM.jpeg');
+    
+    }
+    37.5%
+    {
+        border-bottom-right-radius: 35px;
+        content: url('assets/img_encide/WhatsApp\ Image\ 2023-09-06\ at\ 10.10.15\ PM\ \(1\).jpeg');
+    }
+    50%
+    {
+        border-bottom-left-radius: 35px;
+        content: url('assets/img_encide/WhatsApp\ Image\ 2023-09-06\ at\ 10.10.15\ PM.jpeg'); 
+    }
+    62.5%{
+        border-top-left-radius: 0px;
+    }
+    75%
+    {
+        border-top-right-radius:0px;
+    }
+    8712.5%{
+        border-bottom-right-radius:0px;
+    }
+   100%
+   {
+    border-bottom-left-radius:0px;
+   }
+    
+}
 @media all and (max-width:600px) {
     .rectangle-encide
     {
