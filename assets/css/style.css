@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
+
 }
 
 a {
@@ -69,7 +70,9 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  /* background: #012970; */
+  background: rgb(4,13,18);
+  background: linear-gradient(90deg, rgba(4,13,18,1) 0%, rgba(24,61,61,1) 35%, rgba(92,131,116,1) 100%);
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -114,6 +117,102 @@ section {
   color: #8894f6;
   content: "/";
 }
+
+/* Execom call */
+
+/* google fonts poppins */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+.inner-page{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #183D3D; */
+  /* background: linear-gradient(to right, #183D3D(255,0,0,0), #183D3D(255,0,0,1)); */
+  background-size: cover;
+  background: rgb(4,13,18);
+  background: linear-gradient(90deg, rgba(4,13,18,1) 0%, rgba(24,61,61,1) 35%, rgba(92,131,116,1) 100%);
+}
+
+.inner-page .container{
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  /* background-color: #fff; */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+
+  
+}
+
+.inner-page .container h3{
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.inner-page .container .form{
+  margin-top: 30px;
+  
+}
+
+.inner-page .container .form .input-box{
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+.inner-page .container .form .input-box .label{
+  color: #333;
+}
+
+.inner-page .container .form .input-box .input{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+  color: #707070;
+  outline: none;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+
+}
+
+.inner-page .container .form-submit-btn{
+  margin-top: 40px;
+}
+
+.inner-page .container .form-submit-btn input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border:none;
+  border-radius: 3px;
+  color: rgb(209, 209, 209);
+  background: rgba(63, 114, 76, 0.7);
+}
+
+.inner-page .container .form-submit-btn input:hover{
+  background: rgba(56, 204, 93, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+
+/* End Execom call */
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -405,6 +504,11 @@ section {
   .navbar ul {
     display: none;
   }
+
+  .navbar .getstarted {
+    display: none;
+  }
+
 }
 
 .navbar-mobile {
@@ -945,6 +1049,7 @@ section {
   background-size: cover;
   background: rgb(4,13,18);
   background: linear-gradient(90deg, rgba(4,13,18,1) 0%, rgba(14,232,232,1) 50%, rgba(49,51,50,1) 100%);
+  
 }
 
 .services h2{
