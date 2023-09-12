@@ -73,10 +73,10 @@
     <!-- End Breadcrumbs -->
 
 
-    <section class="inner-page" style="padding-top: 120px;">
-      <div class="container">
+    <section class="inner-page" id="inner-page" style="padding-top: 120px;">
+      <div class="container" id="container">
         <form id="execom-form">
-          <h3><u> EXECOM APPLICATION </u></h3><br>
+          <h3> EXECOM APPLICATION</h3><br>
           <div class="content">
             <div class="input-box">
               <label for="name">Your Full name</label>
@@ -308,21 +308,30 @@
      formd.addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const formData = new FormData(form);
+            const formData = new FormData(formd);
             const data = {};
 
             formData.forEach((value, key) => {
                 data[key] = value;
-            });
+            }
+           );
+          
             const apiUrl = 'https://sheet.best/api/sheets/863d9868-aa19-4457-b859-247c3aeccc8a';
 const u=document.querySelector('input[name="year"]:checked').value;
 axios.post(apiUrl,data)
     .then(response => {console.log('easter Egg \:\)') // You can handle the response here
-    })
+   document.getElementById("execom-form").style.display='none';
+   const y=document.getElementById('container');
+   const res=document.createElement('h1');
+   res.innerHTML='response recorded';
+   y.appendChild(res);
+
+  })
     .catch(error => {
         console.error('Error sending data', error);
     });
-        });
+      
+  });
 
   </script>
 </body>
