@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: FlexStart
   * Updated: Aug 30 2023 with Bootstrap v5.3.1
@@ -48,15 +47,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Practice</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Events</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
-          
+          <li><button id="ex-hom" class="nav-link scrollto active" onclick="window.location.href='index.html';" style="color:white;border:solid white; width: 80px; display: flex; justify-content: center; align-items: center;">Home</button></li>
         </ul>
-        <a class="getstarted scrollto" href="#about">Get Started</a>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
@@ -83,28 +75,28 @@
 
     <section class="inner-page" style="padding-top: 120px;">
       <div class="container">
-        <form action="" method="post">
-          <h3>EXECOM APPLICATION</h3>
+        <form id="execom-form">
+          <h3><u> EXECOM APPLICATION </u></h3><br>
           <div class="content">
             <div class="input-box">
               <label for="name">Your Full name</label>
               <br>
               <input type="text" name="name" id="name" placeholder="Enter your full name" required>
             </div>
-            <br><br>
+            <br>
             <div class="input-box">
               <label for="year">Year</label>
               <br>
-              <input type="radio" name="year" id="first">
+              <input type="radio" name="year" id="first" value="first">
               <label for="first">1st year</label>
               <br>
-              <input type="radio" name="year" id="second">
+              <input type="radio" name="year" id="second" value="second">
               <label for="second">2nd year</label>
               <br>
-              <input type="radio" name="year" id="third">
+              <input type="radio" name="year" id="third" value="third">
               <label for="third">3rd year</label>
               <br>
-              <input type="radio" name="year" id="fourth">
+              <input type="radio" name="year" id="fourth" value="fourth">
               <label for="fourth">4th year</label>
               <br>
             </div>
@@ -112,19 +104,25 @@
             <div class="input-box">
               <label for="dept">Department</label>
               <br>
-              <input type="radio" name="dept" id="cse">
+              <input type="radio" name="dept" id="cse" value="cse">
               <label for="cse">CSE</label>
               <br>
-              <input type="radio" name="dept" id="ece">
+              <input type="radio" name="dept" id="ds" value="ds">
+              <label for="ds">DS</label>
+              <br>
+              <input type="radio" name="dept" id="AI/ML" value="AI/ML">
+              <label for="AI/ML">AI/ML</label>
+              <br>
+              <input type="radio" name="dept" id="ece" value="ece">
               <label for="ece">ECE</label>
               <br>
-              <input type="radio" name="dept" id="eee">
+              <input type="radio" name="dept" id="eee" value="eee">
               <label for="eee">EEE</label>
               <br>
-              <input type="radio" name="dept" id="mech">
+              <input type="radio" name="dept" id="mech" value="mech">
               <label for="mech">MECH</label>
               <br>
-              <input type="radio" name="dept" id="civil">
+              <input type="radio" name="dept" id="civil" value="civil">
               <label for="civil">CIVIL</label>
               <br>
             </div>
@@ -138,78 +136,78 @@
             <div class="input-box">
               <label for="number">WhatsApp number</label>
               <br>
-              <input type="tel" name="number" id="number" placeholder="Enter your WhatsApp number" required>
+              <input type="tel" name="number" id="number" placeholder="Enter your WhatsApp no" required>
             </div>
             <br>
             <div class="input-box">
-              <label for="prefer">1st preference</label>
+              <label for="prefer1">1st preference</label>
               <br>
-              <input type="radio" name="prefer" id="event">
+              <input type="radio" name="prefer1" id="event" value="Event coordinator">
               <label for="event">Event coordinator</label>
               <br>
-              <input type="radio" name="prefer" id="tech">
+              <input type="radio" name="prefer1" id="tech" value="Technical Coordinator">
               <label for="tech">Technical Coordinator</label>
               <br>
-              <input type="radio" name="prefer" id="comm">
+              <input type="radio" name="prefer1" id="comm" value="Community manager">
               <label for="comm">Community manager</label>
               <br>
-              <input type="radio" name="prefer" id="media">
+              <input type="radio" name="prefer1" id="media" value="Media team">
               <label for="media">Media team</label>
               <br>
-              <input type="radio" name="prefer" id="design">
+              <input type="radio" name="prefer1" id="design" value="Design team">
               <label for="design">Design team</label>
               <br>
-              <input type="radio" name="prefer" id="web">
+              <input type="radio" name="prefer1" id="web" value="Web team">
               <label for="web">Web team</label>
               <br>
-              <input type="radio" name="prefer" id="doc">
+              <input type="radio" name="prefer1" id="doc" value="Doc team">
               <label for="doc">Doc team</label>
               <br>
-              <input type="radio" name="prefer" id="public">
+              <input type="radio" name="prefer1" id="public" value="Publicity team">
               <label for="public">Publicity team</label>
               <br>
             </div>
             <br><br>
             <div class="input-box">
-              <label for="prefer">2nd preference</label>
+              <label for="prefer2">2nd preference</label>
               <br>
-              <input type="radio" name="prefer" id="event">
+              <input type="radio" name="prefer2" id="event" value="Event coordinator">
               <label for="event">Event coordinator</label>
               <br>
-              <input type="radio" name="prefer" id="tech">
+              <input type="radio" name="prefer2" id="tech" value="Technical Coordinator">
               <label for="tech">Technical Coordinator</label>
               <br>
-              <input type="radio" name="prefer" id="comm">
+              <input type="radio" name="prefer2" id="comm" value="Community manager">
               <label for="comm">Community manager</label>
               <br>
-              <input type="radio" name="prefer" id="media">
+              <input type="radio" name="prefer2" id="media" value="Media team">
               <label for="media">Media team</label>
               <br>
-              <input type="radio" name="prefer" id="design">
+              <input type="radio" name="prefer2" id="design" value="Design team">
               <label for="design">Design team</label>
               <br>
-              <input type="radio" name="prefer" id="web">
+              <input type="radio" name="prefer2" id="web" value="Web team">
               <label for="web">Web team</label>
               <br>
-              <input type="radio" name="prefer" id="doc">
+              <input type="radio" name="prefer2" id="doc" value="Doc team">
               <label for="doc">Doc team</label>
               <br>
-              <input type="radio" name="prefer" id="public">
+              <input type="radio" name="prefer2" id="public" value="Publicity team">
               <label for="public">Publicity team</label>
               <br>
             </div>
             <br>
-            <label for="interest">Why you want to work in that role?</label>
-            <textarea name="interest" id="interest" cols="30" rows="10" placeholder="Enter here"></textarea>
+            <label for="interest">Why do you want to work in these roles?</label><br>
+            <textarea name="interest" id="interest" cols="30" rows="10" placeholder="Enter here" style="display: flexbox; max-width: 200px;"></textarea>
             <br><br>
-            <label for="exp">Previous volunteering experience</label>
-            <textarea name="exp" id="exp" cols="30" rows="10" placeholder="Enter here"></textarea>
+            <label for="exp">Previous volunteering experience</label><br>
+            <textarea name="exp" id="exp" cols="30" rows="10" placeholder="Enter here" style="display: flexbox; max-width: 200px;"></textarea>
             <br><br>
-            <label for="commitments">Other commitments</label>
-            <textarea name="commitments" id="commitments" cols="30" rows="10" placeholder="Enter here"></textarea>
+            <label for="commitments">Other commitments</label><br>
+            <textarea name="commitments" id="commitments" cols="30" rows="10" placeholder="Enter here" style="display: flexbox; max-width: 200px;"></textarea>
             <br><br>
-            <label for="preparti">ENCIDE events participated</label>
-            <textarea name="preparti" id="preparti" cols="30" rows="10" placeholder="Enter here"></textarea>
+            <label for="participation">ENCIDE events participated</label><br>
+            <textarea name="participation" id="participation" cols="30" rows="10" placeholder="Enter here" style="display: flexbox; max-width: 200px;"></textarea>
             <br><br>
             
             <div class="form-submit-btn">
@@ -293,6 +291,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  </script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -303,7 +302,29 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const formd=document.getElementById('execom-form');
+     formd.addEventListener('submit', function (event) {
+            event.preventDefault();
 
+            const formData = new FormData(form);
+            const data = {};
+
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            const apiUrl = 'https://sheet.best/api/sheets/863d9868-aa19-4457-b859-247c3aeccc8a';
+const u=document.querySelector('input[name="year"]:checked').value;
+axios.post(apiUrl,data)
+    .then(response => {console.log('easter Egg \:\)') // You can handle the response here
+    })
+    .catch(error => {
+        console.error('Error sending data', error);
+    });
+        });
+
+  </script>
 </body>
 
 </html>
