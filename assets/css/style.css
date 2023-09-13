@@ -1903,3 +1903,27 @@ input:invalid {
     transform: translateX-(5px);
   }
 }
+#submitter
+{
+  transition-timing-function: ease-in-out;
+
+}
+
+@keyframes moving {
+  0%
+  {
+    width:20%;
+    background: url('../img_encide/waiting-7579_256.gif');
+    background-size: contain;
+  }
+  100%
+  {
+    width:20%;
+    background: url('../img_encide/waiting-7579_256.gif');
+    background-size: contain;
+  }
+  /* 50%
+  {
+    width:15%;
+  } */
+}
