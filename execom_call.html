@@ -74,6 +74,7 @@
 
 
     <section class="inner-page" id="inner-page" style="padding-top: 120px;">
+      
       <div class="container" id="container" style="margin-top: 20px;">
         <form id="execom-form">
           <h3> EXECOM APPLICATION</h3><br>
@@ -211,7 +212,7 @@
             <br><br>
             
             <div class="form-submit-btn">
-              <input type="submit" value="Submit">
+              <input type="submit" value="Register">
             </div>
 
           </div>
@@ -306,8 +307,12 @@
   <script>
     const formd=document.getElementById('execom-form');
      formd.addEventListener('submit', function (event) {
-            event.preventDefault();
+      const subbut=document.getElementById('submitter');
+            subbut.value=''
+            subbut.style.animation='moving 2s infinite';
 
+            event.preventDefault();
+           
             const formData = new FormData(formd);
             const data = {};
 
