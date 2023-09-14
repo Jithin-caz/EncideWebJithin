@@ -1992,15 +1992,17 @@ input:invalid {
 @keyframes moving {
   0%
   {
-    width:20%;
+    width:10%;
     background: url('../img_encide/waiting-7579_256.gif');
     background-size: contain;
+    background-repeat: no-repeat;
   }
   100%
   {
-    width:20%;
+    width:10%;
     background: url('../img_encide/waiting-7579_256.gif');
     background-size: contain;
+    background-repeat: no-repeat;
   }
   /* 50%
   {
