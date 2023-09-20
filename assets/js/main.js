@@ -291,5 +291,24 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  
+  // // 4 images to show in carousel at the same time
+  // const carousel_items = document.querySelectorAll('.carousel .carousel-item');
+  // const carousel_items_count = carousel_items.length;
+  // carousel_items.forEach((item, index) => {
+  //   const no_concurrent_items = 3;
+  //   let item_next = item.nextElementSibling;
+  //   for(let i = 0; i < no_concurrent_items; i++) {
+  //     // let item_next_index = (index + i) % carousel_items_count;
+  //     if(item_next == null) {
+  //       item_next = carousel_items[0];
+  //     }
+  //     let cloneChild = item_next.cloneNode(true);
+  //     item.appendChild(cloneChild.children[0]);
+  //     item_next = item_next.nextElementSibling;
+  //   }
+  // });
+
 
 })();
+
