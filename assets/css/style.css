@@ -1209,8 +1209,8 @@ background:#f51f9ca0;
 
 .portfolio .carousal-div {
   /* width: 50vw; */
-  width: 75vh;
-  height: 75vh;
+  width: 75vmin;
+  height: 75vmin;
   overflow: hidden;
   /* height: 100%; */
   margin: 0 auto;
