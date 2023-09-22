@@ -761,7 +761,7 @@ section {
 .hero .btn-get-started i {
   margin-left: 5px;
   font-size: 18px;
-  transition: 0.3s;
+  transition: 0.3s;         
 }
 
 .hero .btn-get-started:hover i {
