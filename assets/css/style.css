@@ -1961,17 +1961,17 @@ input:invalid {
 @keyframes moving {
   0%
   {
-    width:10%;
+    width:55%;
+    height:60%;
     background: url('../img_encide/waiting-7579_256.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size:contain;
   }
   100%
   {
-    width:10%;
+    width:55%;
+    height: 60%;
     background: url('../img_encide/waiting-7579_256.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size:contain;
   }
   /* 50%
   {
