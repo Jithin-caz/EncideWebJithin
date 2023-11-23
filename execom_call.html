@@ -311,7 +311,7 @@
             subbut.style.animation='moving 2s infinite';
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{ console.log('Success!', response)
+        .then(response =>{ console.log('I saw that --J', response)
         document.getElementById("execom-form").style.display='none';
         const y=document.getElementById('container');
         const res=document.createElement('h1');
