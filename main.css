@@ -59,6 +59,7 @@
         font-size:5dvw !important ;
     }
     .rectangle{
-        height:70dvw !important;
+        height:100dvw !important;
+        width: 80dvw !important;
     }
 }

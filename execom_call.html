@@ -45,11 +45,11 @@
         <img src="assets/img_encide/encide1.png" style="width: fit-content;" alt=""> 
       </a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" >
         <ul>
-          <li><button id="ex-hom" class="nav-link scrollto active" onclick="window.location.href='index.html';" style="color:white;border:solid white; width: 80px; display: flex; justify-content: center; align-items: center;">Home</button></li>
+          <button id="ex-hom"  onclick="window.location.href='index.html';" style="color:white;border:solid white; width: 80px; display: flex; justify-content: center; align-items: center;">Home</button>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+       
       </nav>
 
     </div>
@@ -76,7 +76,7 @@
     <section class="inner-page" id="inner-page" style="padding-top: 120px;">
       
       <div class="container" id="container" style="margin-top: 20px; min-height: 170px;">
-        <form id="execom-form">
+        <form id="execom-form" name="submit-to-google-sheet">
           <h3> EXECOM APPLICATION</h3><br>
           <div class="content">
             <div class="input-box">
@@ -303,40 +303,27 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
-    const formd=document.getElementById('execom-form');
-     formd.addEventListener('submit', function (event) {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUEzBpeBDB8Q-WGnL5DX62VGjkZ6TjQRjoxhoaTb1HS8q1qo816Ax73BqAzZS39CsmuQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    form.addEventListener('submit', e => {
       const subbut=document.getElementById('submitter');
             subbut.value=''
             subbut.style.animation='moving 2s infinite';
-
-            event.preventDefault();
-           
-            const formData = new FormData(formd);
-            const data = {};
-
-            formData.forEach((value, key) => {
-                data[key] = value;
-            }
-           );
-          
-            const apiUrl = 'https://sheet.best/api/sheets/863d9868-aa19-4457-b859-247c3aeccc8a';
-const u=document.querySelector('input[name="year"]:checked').value;
-axios.post(apiUrl,data)
-    .then(response => {console.log('easter Egg \:\)') // You can handle the response here
-   document.getElementById("execom-form").style.display='none';
-   const y=document.getElementById('container');
-   const res=document.createElement('h2');
-   res.innerHTML='Your response has been recorded';
-   y.appendChild(res);
-  })
-    .catch(error => {
-        console.error('Error sending data', error);
-    });
-      
-  });
-
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ console.log('Success!', response)
+        document.getElementById("execom-form").style.display='none';
+        const y=document.getElementById('container');
+        const res=document.createElement('h1');
+        res.innerHTML='Your response has been recorded';
+        y.style.display='flex';
+        y.style.justifyContent='center';
+        y.style.alignItems='center';
+        y.appendChild(res);
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 
